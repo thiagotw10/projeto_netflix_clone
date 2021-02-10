@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+
+
+/*Variaveis*/
+:root{
+    --vermelho:#E50910;
+    --preta: rgb(24, 24, 24);
+}
+   /*MENU*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+
+}
+
+header .container{
+    display:flex;
+    flex-direction:row;
+    height: 0;
+   
+}
+
+
+header .container .img{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    left: 4%;
+    top: -15%;
+    height: 90px;
+    transition: height 1s;
+}
+
+header .container .img:hover{
+    height: 300px;
+
+}
+
+
+
+header .container  .texto a{
+position: relative;
+flex-direction:row;
+left: 35%;
+top: 20px;
+font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    padding: 40px 0px 15px 0px;
+}
+
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*FILMES E IMAGENS*/
+
+.filme-principal {
+    font-size: 16px;
+    background-image: linear-gradient( rgba(24,24,24, 0.1),rgb(24, 24, 24, 1)100%), url(/img/lupin.jpg);
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: auto;
+    border: 10px transparent var(--preta);
+    padding: 0;
+    background-clip:content-box;
+    
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.botao {
+    background-color: rgba(14, 14, 14, 0.2);
+    border: none;
+    color: white;
+
+    padding: 20px 25px;
+    margin-right: 15px;
+    font-size: 20px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+    border-radius: 8px;
+}
+
+.botao:hover{
+    background-color: white;
+    color: rgb(56, 54, 54);
+}
+
+.botao i{
+    margin-right: 15px;
+}
+
+.filme-principal    .container{
+    margin-left: 70px;
+    width: 70%;
+}
+
+.box-filme{
+    height: 180px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+.carrosel-filmes .container{
+    padding: 0px 70px 0px 60px;
+}
+
